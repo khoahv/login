@@ -1,0 +1,81 @@
+
+.container-fluid{
+    // margin-top: 250px;
+    width: 100vw;
+    height: 100vh;
+   background: #333333;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   ;
+
+
+    .form-login{
+        width: 300px;
+        margin: 0 auto;
+        height: auto;
+        background: #222222	;
+        margin-top: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      
+      
+        p{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        a{
+            padding-left: 177px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            // text-decoration: underline;
+        }
+        .active{
+            border: 1px solid red;
+        }
+        .form{
+            text-align: center;
+            .form-support{
+                background: #444444	;
+                position: relative;
+                width: 275px;
+                margin: 0 auto;
+            }
+        }
+        input{
+            width:  250px;
+            height: 30px;
+            // padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        button{
+            width: 165px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            background: orange;
+            margin-top: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+            
+        }
+        :hover button {
+            // background: greenyellow;
+        }
+        .form-group-send{
+        width: 187px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+         height: 45px;
+         margin-left: 101px;
+         border: none;
+         background: #444444;
+        }
+    }
+
+}
+

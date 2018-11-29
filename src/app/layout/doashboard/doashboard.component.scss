@@ -1,0 +1,19 @@
+@media (min-width: 768px){
+    ::ng-deep .navbar {
+        border-radius: 0px;
+    }
+    
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    background: #339999;
+}
+.navbar-nav> li.hover:hover{
+    background: #339999;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}

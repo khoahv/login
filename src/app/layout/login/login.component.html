@@ -1,0 +1,49 @@
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="Default" color="#fff" type="square-loader">
+  <p style="font-size: 20px; color: white">Loading...</p>>
+
+</ngx-spinner>
+<div class="container-fluid d-flex flex-column">
+  <div class="form-login" style="">
+    <p>DecisionSpace365<i class="far fa-registered"></i>
+    </p>
+    <div class="form" style="margin-bottom: 10px;">
+      <form #frm="ngForm" class="form-support" style="
+     ">
+        <div class="custom-form">
+          <div class="form-group-description">
+            <input class="form-control-textarea input-attribute generic-attribute" [ngClass]="{'active': Username.touched && Username.errors?.required}"
+              name="username" [(ngModel)]="User.username" required #Username="ngModel" placeholder="Username" style="margin-top: 10px;">
+            <div class="description-required" *ngIf="Username.touched">
+              <div *ngIf="Username.errors?.required" style="color: red;margin-left: -115px;
+            margin-top: -5px;">Username
+                is required</div>
+            </div>
+          </div>
+          <div class="form-group-description">
+            <input type="password" class="form-control-textarea input-attribute generic-attribute" [ngClass]="{'active': Password.touched && Password.errors?.required}"
+              name="Password" [(ngModel)]="User.password" required #Password="ngModel" placeholder="Password">
+            <div class="description-required" *ngIf="Password.touched">
+              <div *ngIf="Password.errors?.required" style="color: red;margin-left: -115px;
+            margin-top: -5px;">Password
+                is required</div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="form-group-send" style="">
+        <button class="send-button generic-attribute btn btn-success" [disabled]="frm.invalid" (click)=" checkLogin()">Login</button>
+      </div>
+    </div>
+    <div class="forgotpass" style="padding: 10px 10px 17px 10px;">
+      <a style="text-align: center" href="#">Power by <i class="fab fa-angular"></i>VanKhoa
+      </a>
+      <br>
+    </div>
+
+  </div>
+  <div style="height:35%"></div>
+  <div class="page-footer">
+    <p style="text-align: center; font-size: 15px; font-weight: bold"><span style="color: #FF3333	">HALIBUTION</span>|<span style="color:white	">Lanmark</span></p>
+    <p style="text-align: center; color: white; font-size:10px">Copyright © 2018. All rights reserved.</p>
+  </div>
+</div>
